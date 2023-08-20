@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Webinar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d4ced4;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(78, 236, 236, 0.8);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #f70909;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #72e7ef;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .fees-box {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 300px;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .fees-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .fees-amount {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .fees-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: auto;
+            margin-top: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-player {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            position: relative;
+        }
+
+        .video-player iframe {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .statistics-box {
+            max-width: 300px;
+            margin: auto;
+            margin-top: 30px;
+            background-color: #75e1ea;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .rating {
+            font-size: 24px;
+            color: #cc70c3;
+            margin-bottom: 10px;
+        }
+
+        .total-registered {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .faq-heading {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #db87cb;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+            margin-top: 30px;
+            background-color: #65e4e4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .featured-companies {
+            max-width: 800px;
+            margin: auto;
+            margin-top: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .company-logo {
+            max-width: 100px;
+            height: auto;
+            margin: 0 20px;
+        }
+
+        .company-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .timer-box {
+            max-width: 300px;
+            margin: auto;
+            margin-top: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .timer {
+            font-size: 24px;
+            color: #030609;
+            margin-bottom: 10px;
+        }
+
+        .running-out-text {
+            font-size: 18px;
+            color: #ff6347;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Welcome to Our Webinar</h1>
+        <p>Join us for an exciting and informative webinar on career growth and innovation.</p>
+    </div>
+    <div class="header">
+        <h1>ChatGPT Webinar: Unleashing Engineers’ Career Growth</h1>
+        <p>Date and Time: 31st August, 2023 at 11 AM</p>
+    </div>
+    <div class="content">
+        <h2>About the Webinar</h2>
+        <p>Join us for a 50-minute insightful webinar on how ChatGPT can empower engineers to supercharge their career
+            growth. In this webinar, we'll explore the potential of ChatGPT in enhancing engineering skills, fostering
+            innovation, and staying ahead in the competitive tech landscape.</p>
+
+        <h2>Key Topics</h2>
+        <ul>
+            <li>Understanding the capabilities of ChatGPT in engineering contexts</li>
+            <li>Real-world applications and success stories</li>
+            <li>Practical tips for incorporating ChatGPT into your projects</li>
+            <li>Career development strategies for engineers</li>
+        </ul>
+
+        <h2>Speaker</h2>
+        <p>Our speaker for this webinar is a seasoned expert in both artificial intelligence and engineering. With years
+            of experience in the field, they will provide valuable insights into how engineers can leverage ChatGPT for
+            their professional growth.</p>
+
+        <h2>Registration</h2>
+        <p>To attend the webinar, please register using the form below:</p>
+        <form action="your_registration_handler_url" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <div class="fees-box">
+                <div class="fees-title">Webinar Registration</div>
+                <div class="fees-amount">499/-</div>
+                <div class="fees-description">Registration fee includes access to the webinar and downloadable
+                    resources.</div>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <div class="video-container">
+        <div class="video-player">
+            <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="statistics-box">
+            <div class="rating">4.8 / 5.0</div>
+            <div class="total-registered">Total Students Registered: 250</div>
+        </div>
+        <div class="faq-heading">Frequently Asked Questions</div>
+        <div class="faq-container">
+            <div class="faq-question" onclick="toggleAnswer(1)">What is the webinar about?</div>
+            <div class="faq-answer" id="answer1">
+                The webinar is about unleashing engineers' career growth using ChatGPT. We'll explore how ChatGPT can
+                enhance engineering skills and foster innovation.
+            </div>
+
+            <div class="faq-question" onclick="toggleAnswer(2)">When is the webinar scheduled?</div>
+            <div class="faq-answer" id="answer2">
+                The webinar is scheduled for 31st August 2023 at 11 AM.
+            </div>
+
+            <div class="faq-question" onclick="toggleAnswer(3)">Is there a registration fee?</div>
+            <div class="faq-answer" id="answer3">
+                Yes, there is a registration fee of 499/-.
+            </div>
+
+            <script>
+                function toggleAnswer(id) {
+                    var answer = document.getElementById('answer' + id);
+                    answer.classList.toggle('active');
+                }
+            </script>
+            <div class="featured-companies">
+                <h2>Featured Companies</h2>
+                <div class="company-list">
+                    <img src="https://parentcircle.blob.core.windows.net/static/image/the-indian-express-big-logo.jpg"
+                        alt="Company 1 Logo" class="company-logo">
+                    <img src="https://www.softwaresuggest.com/img/media/deccanchronicle_logo.png" alt="Company 2 Logo"
+                        class="company-logo">
+                    <img src="https://th.bing.com/th/id/R.d06919c7dfc5d9f580b67649186846d2?rik=RgYy%2b1Y0bvq6lg&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2017%2f05%2fYahoo-logo.png&ehk=BERQOLed677e4Lk7J0VGu9Ex%2b09b%2btFWKbzIhslkIUY%3d&risl=&pid=ImgRaw&r=0"
+                        alt="Company 3 Logo" class="company-logo">
+                </div>
+                <div class="timer-box">
+                    <div class="timer" id="countdown">02:30:00</div>
+                </div>
+
+                <script>
+                    function updateTimer() {
+                        var countdownDate = new Date("August 31, 2023 11:00:00").getTime();
+                        var now = new Date().getTime();
+                        var distance = countdownDate - now;
+
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        document.getElementById("countdown").innerHTML = hours + ":" + minutes + ":" + seconds;
+                    }
+
+                    setInterval(updateTimer, 1000);
+                </script>
+                <div class="countdown-container">
+                    <h2>Hurry Up!</h2>
+                    <p>Time is running out to register for the webinar. Don't miss out on this opportunity to enhance
+                        your skills and knowledge!</p>
+                    <div class="running-out-text">Register before it's too late!</div>
+                </div>
+</body>
+
+</html>
